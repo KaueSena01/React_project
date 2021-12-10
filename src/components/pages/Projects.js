@@ -11,7 +11,7 @@ import styles from './Projects.module.css'
 
 // useLocation para acessar o history
 
-function Project() {
+function Projects() {
     const [projects, setProjects] = useState([])
     const [removeLoading, setRemoveLoading] = useState(false)
     const [projectMessage, setProjectMessage] = useState([])
@@ -83,4 +83,4 @@ function Project() {
     )
 }
 
-export default Project
+export default Projects

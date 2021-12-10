@@ -1,14 +1,57 @@
 {
   "projects": [
     {
-      "name": "Social",
-      "budget": "8000",
+      "name": "Trabalho",
+      "budget": "178000",
       "category": {
-        "id": "4",
-        "name": "Planejamento"
+        "id": "1",
+        "name": "Infra"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 32800,
+      "services": [
+        {
+          "name": "Meu projeto 3",
+          "cost": "13000",
+          "description": "ffeeerer",
+          "id": "7a9c6353-330a-4232-a2ab-c96b8d24e4b8"
+        },
+        {
+          "name": "Meu projeto 3",
+          "cost": "13000",
+          "description": "ffeeerer",
+          "id": "7a9c6353-330a-4232-a2ab-c96b8d24e4b8"
+        },
+        {
+          "name": "Meu projeto 1",
+          "cost": "1900",
+          "description": "ffeeerer",
+          "id": "c5d5c9d9-5d12-40f2-85a3-e6a0e448c307"
+        },
+        {
+          "name": "Meu projeto 1",
+          "cost": "1900",
+          "description": "ffeeerer",
+          "id": "c5d5c9d9-5d12-40f2-85a3-e6a0e448c307"
+        },
+        {
+          "name": "Integrantes",
+          "cost": "1000",
+          "description": "feeggegeeg",
+          "id": "d3b07ca2-a2fe-475c-b069-6ae35778068f"
+        },
+        {
+          "name": "Integrantes",
+          "cost": "1000",
+          "description": "feeggegeeg",
+          "id": "74a12704-005d-4c48-b5f4-4f58c9629e5b"
+        },
+        {
+          "name": "Integrantes",
+          "cost": "1000",
+          "description": "feeggegeeg",
+          "id": "27197821-1765-4ee9-ad26-a1b76b7d03f4"
+        }
+      ],
       "id": 2
     },
     {
