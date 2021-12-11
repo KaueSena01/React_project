@@ -61,8 +61,34 @@
         "id": "4",
         "name": "Planejamento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": null,
+      "services": [
+        {
+          "name": "Contratar dev php",
+          "cost": "900",
+          "description": "Fazer algo",
+          "id": "b95e2dd0-8c23-4ce6-bdf0-865aebb6133e"
+        },
+        [],
+        {
+          "id": "a7311b1f-7ed3-4ee3-a717-a469f5723fda",
+          "name": "Projeto de orçamento",
+          "cost": "5",
+          "description": "rrr"
+        },
+        {
+          "id": "a7311b1f-7ed3-4ee3-a717-a469f5723fda",
+          "name": "Projeto de orçamento",
+          "cost": "5",
+          "description": "rrr"
+        },
+        {
+          "id": "87fb7601-0821-432c-a017-d494af04dad5",
+          "name": "Projeto de orçamento",
+          "cost": "5",
+          "description": "rrr"
+        }
+      ],
       "id": 3
     }
   ],
