@@ -26,7 +26,6 @@ function Project() {
     const [typeMessage, setTypeMessage] = useState([])
 
     useEffect(() => {
-        setTimeout(() => {
             fetch(`http://localhost:5000/projects/${id}`, {
                 method: 'GET',
                 headers: {
@@ -39,11 +38,32 @@ function Project() {
                     setServices(data.services)
                 }
             )).catch(err => console.log(err))
-        }, 300);
     }, [id])
 
-    function removeService() {
+    function removeService(id, cost) {
+        const servicesUpdate = project.services.filter(
+            (service) => service.id !== id
+        )
 
+        const projectUpdated = project
+
+        projectUpdated.services = servicesUpdate
+
+        projectUpdated.cost = parseFloat(cost) - parseFloat(projectUpdated.cost)
+        // Custo do projeto - custo do serviço
+
+        fetch(`http://localhost:5000/projects/${projectUpdated.id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify(projectUpdated)
+        }).then(resp => resp.json()).then((data) => {
+            setProject(projectUpdated)
+            setServices(servicesUpdate)
+            setMessage('Serviço removido com sucesso')
+            setTypeMessage('success')
+        }).catch(err => console.log(err))
     }
 
     function createService(project) {
